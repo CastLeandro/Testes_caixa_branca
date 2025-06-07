@@ -25,8 +25,7 @@ def test_email_invalido():
         LoginRequest(email= "user.com", password="senhaForte@123")
 
 def test_login_valido():
-    login = LoginRequest(email="userexemplo.com", password="SenhaForte@123")
+    login = LoginRequest(email="user@exemplo.com", password="SenhaForte@123")
     assert login.password == "SenhaForte@123"
     assert login.email == "user@exemplo.com"
-
 
