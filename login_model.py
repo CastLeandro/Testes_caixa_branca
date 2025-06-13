@@ -14,5 +14,5 @@ class LoginRequest(BaseModel):
         if not re.search(r"[0-9]", value):
             raise ValueError("A senha deve conter ao menos um número.")
         if not re.search(r"[!@#$%^&*(),.?\":{}|<>]", value):
-            raise ValueError(" A seenha deve conter ao menos um caractere especial.")
+            raise ValueError("A senha deve conter ao menos um caractere especial.")
         return value
